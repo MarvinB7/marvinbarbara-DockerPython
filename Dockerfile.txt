@@ -1,0 +1,11 @@
+# Utilisez une image de base Python officielle
+FROM python:3.9-slim
+
+# Définissez le répertoire de travail dans le conteneur
+WORKDIR /app
+
+# Copiez le script Python dans le conteneur
+COPY NomMDP.py /app/
+
+# Commande par défaut pour exécuter le script
+CMD ["python", "NomMDP.py"]
